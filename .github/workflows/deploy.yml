@@ -13,6 +13,6 @@ jobs:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: 'ukrhat0.ftp.tools'
-          username: 'ukrhat0_salary'
-          password: 'v3d2GfZC77Bb'
+          server: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
