@@ -1,0 +1,41 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins.scss";
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+//Components
+@import "custom/components/buttons";
+@import "custom/components/cards";
+@import "custom/components/filter";
+
+body {
+    background-color: $white;
+    color: #333;
+}
+
+.tags-green {
+    background-color: $bg-custom-green;
+    color: $white;
+}
+
+.tags-light {
+    background-color: $bg-custom-light;
+}
+
+
+
+
+
+
+
+
+
+// Variables
+//@import 'variables';
+
+// Bootstrap
+//@import 'bootstrap/scss/bootstrap';

@@ -1,0 +1,83 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Salary Parser API",
+        "description": "API of Salary Parser",
+        "version": "1"
+    },
+    "paths": {
+        "App\\Http\\Controllers": {},
+        "/api/v1/analitics/chart/candidates-per-jobs": {
+            "get": {
+                "tags": [
+                    "Analitics"
+                ],
+                "summary": "Demo data for chart",
+                "description": "Get demo data for chart",
+                "operationId": "demo",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "description": "Response status message",
+                                            "type": "string",
+                                            "example": "success"
+                                        },
+                                        "code": {
+                                            "description": "Response status code",
+                                            "type": "integer",
+                                            "example": "200"
+                                        },
+                                        "chart": {
+                                            "properties": {
+                                                "labels": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "dataset": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "properties": {
+                                                            "label": {
+                                                                "type": "array",
+                                                                "items": {}
+                                                            },
+                                                            "data": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "number"
+                                                                }
+                                                            },
+                                                            "fill": {
+                                                                "type": "boolean"
+                                                            },
+                                                            "borderColor": {
+                                                                "type": "string"
+                                                            },
+                                                            "tension": {
+                                                                "type": "number"
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    }
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
